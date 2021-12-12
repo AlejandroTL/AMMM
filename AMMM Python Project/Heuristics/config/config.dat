@@ -13,8 +13,8 @@ verbose              = True;                    # Verbose mode?
 alpha                = 0.3;                 # Alpha parameter for the GRASP solver.
 
 # --- Local Search specific parameters ------------------------------------------------------------------------
-localSearch          = False;                # Enable local search?
-neighborhoodStrategy = Reassignment;        # Supported Neighborhoods: TaskExchange
+localSearch          = True;                # Enable local search?
+neighborhoodStrategy = Reassignment;        # Supported Neighborhoods: Reassignment
 policy               = BestImprovement;    # Supported Policies: FirstImprovement / BestImprovement
 
 # --- BRKGA specific parameters -------------------------------------------------------------------------------

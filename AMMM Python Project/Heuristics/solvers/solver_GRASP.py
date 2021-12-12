@@ -111,7 +111,7 @@ class Solver_GRASP(_Solver):
                 grasp = solution.embedding
 
                 if self.config.localSearch:
-                    localSearch = LocalSearch(self.config, None)
+                    localSearch = LocalSearch(self.config, self.instance)
                     endTime = self.startTime + self.config.maxExecTime
                     solution = localSearch.solve(solution=solution, startTime=self.startTime, endTime=endTime)
 
